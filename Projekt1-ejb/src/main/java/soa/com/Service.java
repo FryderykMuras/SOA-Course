@@ -19,7 +19,7 @@ import java.util.List;
 @Stateless
 @WebService
 @SecurityDomain("my-domain")
-@DeclareRoles({"specialusers",""})
+@DeclareRoles({"specialusers","regularusers"})
 @WebContext(authMethod="BASIC",transportGuarantee="NONE")
 public class Service {
     @EJB
