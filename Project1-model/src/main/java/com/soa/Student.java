@@ -1,4 +1,4 @@
-package soa.com;
+package com.soa;
 
 import org.apache.commons.io.FileUtils;
 

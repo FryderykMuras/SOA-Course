@@ -1,4 +1,4 @@
-package soa.com;
+package com.soa;
 
 import org.jboss.annotation.security.SecurityDomain;
 import org.jboss.ws.api.annotation.WebContext;
@@ -14,6 +14,11 @@ import javax.jws.WebService;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import java.util.List;
+
+
+
+
+
 
 
 @Stateless
