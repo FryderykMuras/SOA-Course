@@ -3,6 +3,10 @@ package com.soa;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.soa.domain.NewCourse;
 import com.soa.domain.NewStudent;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 
 import javax.ejb.EJB;
 import javax.validation.Valid;
@@ -12,6 +16,7 @@ import java.io.IOException;
 
 
 @Path("/students")
+@Api(value = "SimpleRESTService")
 public class Test {
 
     @EJB
@@ -20,6 +25,10 @@ public class Test {
     @GET
     @Produces("application/json")
     @Path("/")
+    @ApiOperation(value = "Get students")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Succesful retrival of Students", response = Student[].class)
+    })
     public Response getStudents() {
 
         String jsonStr = getJSON(students.getStudents());
