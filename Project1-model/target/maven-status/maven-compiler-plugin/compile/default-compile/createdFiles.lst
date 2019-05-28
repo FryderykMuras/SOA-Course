@@ -1,2 +1,4 @@
-com/soa/Student.class
+com/soa/domain/NewCourse.class
 com/soa/StudentsManager.class
+com/soa/Student.class
+com/soa/domain/NewStudent.class

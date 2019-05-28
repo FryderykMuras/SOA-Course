@@ -4,6 +4,7 @@ import org.apache.commons.io.FileUtils;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -52,9 +53,9 @@ public class Student {
         return false;
     }
 
-    public String getFullName(){
-        return this.name + " " + this.surname;
-    }
+//    public String getFullName(){
+//        return this.name + " " + this.surname;
+//    }
     public void setID(String id){
         this.studentID = id;
     }

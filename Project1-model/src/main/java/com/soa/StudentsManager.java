@@ -10,17 +10,19 @@ import java.util.stream.Collectors;
 public class StudentsManager {
 
     private List<Student> students;
+    private int currentId;
 
     @PostConstruct
     void init(){
         this.students = new ArrayList<>();
-        this.students.add(new Student("Adam","Adamski", "1","male", "/Users/fryderykmuras/Projekt1/Projekt1-ejb/src/main/resources/picture.jpeg"));
-        this.students.add(new Student("Jan","Nowak", "2", "male","/Users/fryderykmuras/Projekt1/Projekt1-ejb/src/main/resources/picture.jpeg"));
-        this.students.add(new Student("Agnieszka","Kowalska", "3", "female","/Users/fryderykmuras/Projekt1/Projekt1-ejb/src/main/resources/picture.jpeg"));
+        this.currentId=0;
+        this.addStudent("Adam","Adamski","male");
+        this.addStudent("Jan","Nowak", "male");
+        this.addStudent("Agnieszka","Kowalska", "female");
     }
 
     public String getFullName(int index){
-        return this.students.get(index).getFullName();
+        return this.students.get(index).getName()+" "+this.students.get(index).getSurname();
     }
     public void setName(int index, String name){
         this.students.get(index).setName(name);
@@ -56,16 +58,33 @@ public class StudentsManager {
 
 
     public List<String> getStudentsByGender(String gender){
-        return this.getStudents().stream().filter(student -> student.getGender().equals(gender)).map(student -> student.getFullName()).collect(Collectors.toList());
+        return this.getStudents().stream().filter(student -> student.getGender().equals(gender)).map(student -> student.getName()+" "+student.getSurname()).collect(Collectors.toList());
     }
 
-    public void addStudent(String name, String surname, String id, String gender){
-        if(this.students.stream().filter(student->student.getID().equals(id)).collect(Collectors.toList()).isEmpty()){
-            this.students.add(new Student(name,surname,id,gender,""));
-        }
+    synchronized public String addStudent(String name, String surname, String gender){
+//        if(this.students.stream().filter(student->student.getID().equals(id)).collect(Collectors.toList()).isEmpty()){
+//            this.students.add(new Student(name,surname,id,gender,"/Users/fryderykmuras/Projekt1/Projekt1-ejb/src/main/resources/picture.jpeg"));
+//        }
+
+        this.students.add(new Student(name,surname,Integer.toString(this.currentId),gender,"/Users/fryderykmuras/Projekt1/Projekt1-ejb/src/main/resources/picture.jpeg"));
+        this.currentId ++;
+        return Integer.toString(this.currentId-1);
     }
 
     public List<Student> getStudents(){
         return this.students;
+    }
+
+    public void deleteStudent(String id){
+        this.students.remove(this.getStudentById(id));
+    }
+
+    public Student getStudentById(String id){
+        for(Student s :this.students){
+            if(s.getID().equals(id)){
+                return s;
+            }
+        }
+        return null;
     }
 }

@@ -24,24 +24,24 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _AddCourse_QNAME = new QName("http://com.soa/", "addCourse");
-    private final static QName _AddCourseResponse_QNAME = new QName("http://com.soa/", "addCourseResponse");
-    private final static QName _AddStudent_QNAME = new QName("http://com.soa/", "addStudent");
-    private final static QName _AddStudentResponse_QNAME = new QName("http://com.soa/", "addStudentResponse");
-    private final static QName _GetCourses_QNAME = new QName("http://com.soa/", "getCourses");
-    private final static QName _GetCoursesResponse_QNAME = new QName("http://com.soa/", "getCoursesResponse");
-    private final static QName _GetFullName_QNAME = new QName("http://com.soa/", "getFullName");
-    private final static QName _GetFullNameResponse_QNAME = new QName("http://com.soa/", "getFullNameResponse");
-    private final static QName _GetImageBase64_QNAME = new QName("http://com.soa/", "getImageBase64");
-    private final static QName _GetImageBase64Response_QNAME = new QName("http://com.soa/", "getImageBase64Response");
-    private final static QName _GetStudents_QNAME = new QName("http://com.soa/", "getStudents");
-    private final static QName _GetStudentsByGender_QNAME = new QName("http://com.soa/", "getStudentsByGender");
-    private final static QName _GetStudentsByGenderResponse_QNAME = new QName("http://com.soa/", "getStudentsByGenderResponse");
-    private final static QName _GetStudentsResponse_QNAME = new QName("http://com.soa/", "getStudentsResponse");
-    private final static QName _RemoveCourse_QNAME = new QName("http://com.soa/", "removeCourse");
-    private final static QName _RemoveCourseResponse_QNAME = new QName("http://com.soa/", "removeCourseResponse");
-    private final static QName _SetName_QNAME = new QName("http://com.soa/", "setName");
-    private final static QName _SetNameResponse_QNAME = new QName("http://com.soa/", "setNameResponse");
+    private final static QName _AddCourse_QNAME = new QName("http://soa.com/", "addCourse");
+    private final static QName _AddCourseResponse_QNAME = new QName("http://soa.com/", "addCourseResponse");
+    private final static QName _AddStudent_QNAME = new QName("http://soa.com/", "addStudent");
+    private final static QName _AddStudentResponse_QNAME = new QName("http://soa.com/", "addStudentResponse");
+    private final static QName _GetCourses_QNAME = new QName("http://soa.com/", "getCourses");
+    private final static QName _GetCoursesResponse_QNAME = new QName("http://soa.com/", "getCoursesResponse");
+    private final static QName _GetFullName_QNAME = new QName("http://soa.com/", "getFullName");
+    private final static QName _GetFullNameResponse_QNAME = new QName("http://soa.com/", "getFullNameResponse");
+    private final static QName _GetImageBase64_QNAME = new QName("http://soa.com/", "getImageBase64");
+    private final static QName _GetImageBase64Response_QNAME = new QName("http://soa.com/", "getImageBase64Response");
+    private final static QName _GetStudents_QNAME = new QName("http://soa.com/", "getStudents");
+    private final static QName _GetStudentsByGender_QNAME = new QName("http://soa.com/", "getStudentsByGender");
+    private final static QName _GetStudentsByGenderResponse_QNAME = new QName("http://soa.com/", "getStudentsByGenderResponse");
+    private final static QName _GetStudentsResponse_QNAME = new QName("http://soa.com/", "getStudentsResponse");
+    private final static QName _RemoveCourse_QNAME = new QName("http://soa.com/", "removeCourse");
+    private final static QName _RemoveCourseResponse_QNAME = new QName("http://soa.com/", "removeCourseResponse");
+    private final static QName _SetName_QNAME = new QName("http://soa.com/", "setName");
+    private final static QName _SetNameResponse_QNAME = new QName("http://soa.com/", "setNameResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.soa.connector
@@ -242,7 +242,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link AddCourse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "addCourse")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "addCourse")
     public JAXBElement<AddCourse> createAddCourse(AddCourse value) {
         return new JAXBElement<AddCourse>(_AddCourse_QNAME, AddCourse.class, null, value);
     }
@@ -255,7 +255,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link AddCourseResponse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "addCourseResponse")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "addCourseResponse")
     public JAXBElement<AddCourseResponse> createAddCourseResponse(AddCourseResponse value) {
         return new JAXBElement<AddCourseResponse>(_AddCourseResponse_QNAME, AddCourseResponse.class, null, value);
     }
@@ -268,7 +268,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link AddStudent }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "addStudent")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "addStudent")
     public JAXBElement<AddStudent> createAddStudent(AddStudent value) {
         return new JAXBElement<AddStudent>(_AddStudent_QNAME, AddStudent.class, null, value);
     }
@@ -281,7 +281,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link AddStudentResponse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "addStudentResponse")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "addStudentResponse")
     public JAXBElement<AddStudentResponse> createAddStudentResponse(AddStudentResponse value) {
         return new JAXBElement<AddStudentResponse>(_AddStudentResponse_QNAME, AddStudentResponse.class, null, value);
     }
@@ -294,7 +294,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link GetCourses }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "getCourses")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "getCourses")
     public JAXBElement<GetCourses> createGetCourses(GetCourses value) {
         return new JAXBElement<GetCourses>(_GetCourses_QNAME, GetCourses.class, null, value);
     }
@@ -307,7 +307,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link GetCoursesResponse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "getCoursesResponse")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "getCoursesResponse")
     public JAXBElement<GetCoursesResponse> createGetCoursesResponse(GetCoursesResponse value) {
         return new JAXBElement<GetCoursesResponse>(_GetCoursesResponse_QNAME, GetCoursesResponse.class, null, value);
     }
@@ -320,7 +320,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link GetFullName }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "getFullName")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "getFullName")
     public JAXBElement<GetFullName> createGetFullName(GetFullName value) {
         return new JAXBElement<GetFullName>(_GetFullName_QNAME, GetFullName.class, null, value);
     }
@@ -333,7 +333,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link GetFullNameResponse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "getFullNameResponse")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "getFullNameResponse")
     public JAXBElement<GetFullNameResponse> createGetFullNameResponse(GetFullNameResponse value) {
         return new JAXBElement<GetFullNameResponse>(_GetFullNameResponse_QNAME, GetFullNameResponse.class, null, value);
     }
@@ -346,7 +346,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link GetImageBase64 }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "getImageBase64")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "getImageBase64")
     public JAXBElement<GetImageBase64> createGetImageBase64(GetImageBase64 value) {
         return new JAXBElement<GetImageBase64>(_GetImageBase64_QNAME, GetImageBase64 .class, null, value);
     }
@@ -359,7 +359,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link GetImageBase64Response }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "getImageBase64Response")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "getImageBase64Response")
     public JAXBElement<GetImageBase64Response> createGetImageBase64Response(GetImageBase64Response value) {
         return new JAXBElement<GetImageBase64Response>(_GetImageBase64Response_QNAME, GetImageBase64Response.class, null, value);
     }
@@ -372,7 +372,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link GetStudents }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "getStudents")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "getStudents")
     public JAXBElement<GetStudents> createGetStudents(GetStudents value) {
         return new JAXBElement<GetStudents>(_GetStudents_QNAME, GetStudents.class, null, value);
     }
@@ -385,7 +385,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link GetStudentsByGender }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "getStudentsByGender")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "getStudentsByGender")
     public JAXBElement<GetStudentsByGender> createGetStudentsByGender(GetStudentsByGender value) {
         return new JAXBElement<GetStudentsByGender>(_GetStudentsByGender_QNAME, GetStudentsByGender.class, null, value);
     }
@@ -398,7 +398,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link GetStudentsByGenderResponse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "getStudentsByGenderResponse")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "getStudentsByGenderResponse")
     public JAXBElement<GetStudentsByGenderResponse> createGetStudentsByGenderResponse(GetStudentsByGenderResponse value) {
         return new JAXBElement<GetStudentsByGenderResponse>(_GetStudentsByGenderResponse_QNAME, GetStudentsByGenderResponse.class, null, value);
     }
@@ -411,7 +411,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link GetStudentsResponse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "getStudentsResponse")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "getStudentsResponse")
     public JAXBElement<GetStudentsResponse> createGetStudentsResponse(GetStudentsResponse value) {
         return new JAXBElement<GetStudentsResponse>(_GetStudentsResponse_QNAME, GetStudentsResponse.class, null, value);
     }
@@ -424,7 +424,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link RemoveCourse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "removeCourse")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "removeCourse")
     public JAXBElement<RemoveCourse> createRemoveCourse(RemoveCourse value) {
         return new JAXBElement<RemoveCourse>(_RemoveCourse_QNAME, RemoveCourse.class, null, value);
     }
@@ -437,7 +437,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link RemoveCourseResponse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "removeCourseResponse")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "removeCourseResponse")
     public JAXBElement<RemoveCourseResponse> createRemoveCourseResponse(RemoveCourseResponse value) {
         return new JAXBElement<RemoveCourseResponse>(_RemoveCourseResponse_QNAME, RemoveCourseResponse.class, null, value);
     }
@@ -450,7 +450,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link SetName }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "setName")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "setName")
     public JAXBElement<SetName> createSetName(SetName value) {
         return new JAXBElement<SetName>(_SetName_QNAME, SetName.class, null, value);
     }
@@ -463,7 +463,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link SetNameResponse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://com.soa/", name = "setNameResponse")
+    @XmlElementDecl(namespace = "http://soa.com/", name = "setNameResponse")
     public JAXBElement<SetNameResponse> createSetNameResponse(SetNameResponse value) {
         return new JAXBElement<SetNameResponse>(_SetNameResponse_QNAME, SetNameResponse.class, null, value);
     }

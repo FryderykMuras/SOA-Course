@@ -23,7 +23,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent&gt;
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *                 &lt;sequence&gt;
- *                   &lt;element name="student" type="{http://com.soa/}student" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="student" type="{http://soa.com/}student" maxOccurs="unbounded" minOccurs="0"/&gt;
  *                 &lt;/sequence&gt;
  *               &lt;/restriction&gt;
  *             &lt;/complexContent&gt;
@@ -80,7 +80,7 @@ public class GetStudentsResponse {
      *   &lt;complexContent&gt;
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
      *       &lt;sequence&gt;
-     *         &lt;element name="student" type="{http://com.soa/}student" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="student" type="{http://soa.com/}student" maxOccurs="unbounded" minOccurs="0"/&gt;
      *       &lt;/sequence&gt;
      *     &lt;/restriction&gt;
      *   &lt;/complexContent&gt;

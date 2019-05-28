@@ -88,7 +88,7 @@ public class Service {
                            @XmlElement(required=true) @WebParam(name="id") String id,
                            @XmlElement(required=true) @WebParam(name="gender") String gender)
     {
-        this.students.addStudent(name,surname,id,gender);
+        this.students.addStudent(name,surname,gender);
     }
 
     @WebMethod
