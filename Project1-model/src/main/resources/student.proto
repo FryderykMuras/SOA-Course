@@ -1,0 +1,16 @@
+package com.soa;
+option java_package = "com.soa.ProtoBuffers";
+option java_outer_classname = "StudentsProto";
+
+message Student {
+    required string name = 1;
+    required string surname = 2;
+    required string id = 3;
+    required string img = 4;
+    required string gender = 5;
+    repeated string courses = 6;
+}
+
+message StudentsList {
+    repeated Student student = 1;
+}

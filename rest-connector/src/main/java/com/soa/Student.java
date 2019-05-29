@@ -48,6 +48,36 @@ public class Student {
         return img;
     }
 
+    public Student setCourses(List<String> courses) {
+        this.courses = courses;
+        return this;
+    }
+
+    public Student setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public Student setSurname(String surname) {
+        this.surname = surname;
+        return this;
+    }
+
+    public Student setGender(String gender) {
+        this.gender = gender;
+        return this;
+    }
+
+    public Student setId(String id) {
+        this.id = id;
+        return this;
+    }
+
+    public Student setImg(String img) {
+        this.img = img;
+        return this;
+    }
+
     @Override
     public String toString(){
         StringBuilder courses = new StringBuilder();

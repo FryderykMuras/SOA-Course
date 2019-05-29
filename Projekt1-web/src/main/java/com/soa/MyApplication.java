@@ -1,6 +1,7 @@
 package com.soa;
 
 
+import com.soa.ProtoBuffers.StudentProtocMessageBodyProvider;
 import io.swagger.jaxrs.config.BeanConfig;
 
 import javax.ws.rs.ApplicationPath;
@@ -17,14 +18,16 @@ public class MyApplication extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
-        h.add(Test.class);
+        h.add(StudentEndpoint.class);
         h.add(UserEndpoint.class);
         h.add(JWTTokenNeededFilter.class);
         h.add(SimpleKeyGenerator.class);
         h.add(io.swagger.jaxrs.listing.ApiListingResource.class);
         h.add(io.swagger.jaxrs.listing.SwaggerSerializers.class);
+        h.add(StudentProtocMessageBodyProvider.class);
         return h;
     }
+
 
     private void init() {
         BeanConfig beanConfig = new BeanConfig();

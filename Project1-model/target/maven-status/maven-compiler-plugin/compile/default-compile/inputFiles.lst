@@ -2,3 +2,5 @@
 /Users/fryderykmuras/Projekt1/Project1-model/src/main/java/com/soa/domain/NewStudent.java
 /Users/fryderykmuras/Projekt1/Project1-model/src/main/java/com/soa/StudentsManager.java
 /Users/fryderykmuras/Projekt1/Project1-model/src/main/java/com/soa/Student.java
+/Users/fryderykmuras/Projekt1/Project1-model/src/main/java/com/soa/ProtoBuffers/StudentProtocMessageBodyProvider.java
+/Users/fryderykmuras/Projekt1/Project1-model/src/main/java/com/soa/ProtoBuffers/StudentsProto.java

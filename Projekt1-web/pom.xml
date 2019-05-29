@@ -140,6 +140,12 @@
          <version>1.5.0</version>
       </dependency>
 
+      <dependency>
+         <groupId>com.google.protobuf</groupId>
+         <artifactId>protobuf-java</artifactId>
+         <version>3.7.1</version>
+      </dependency>
+
    </dependencies>
 
    <build>
@@ -152,6 +158,28 @@
                <!-- Java EE 7 doesn't require web.xml, Maven needs to catch up! -->
                <failOnMissingWebXml>false</failOnMissingWebXml>
             </configuration>
+         </plugin>
+
+         <plugin>
+            <groupId>com.github.os72</groupId>
+            <artifactId>protoc-jar-maven-plugin</artifactId>
+            <version>3.1.0.1</version>
+            <executions>
+               <execution>
+                  <phase>generate-sources</phase>
+                  <goals>
+                     <goal>run</goal>
+                  </goals>
+                  <configuration>
+                     <protocVersion>3.1.0</protocVersion>
+                     <addSources>none</addSources>
+                     <outputDirectory>src/main/java</outputDirectory>
+                     <inputDirectories>
+                        <include>src/main/resources</include>
+                     </inputDirectories>
+                  </configuration>
+               </execution>
+            </executions>
          </plugin>
       </plugins>
    </build>

@@ -3,6 +3,9 @@ package com.soa;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
@@ -24,6 +27,7 @@ import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 import static javax.ws.rs.core.Response.Status.UNAUTHORIZED;
 
 @Path("/users")
+@Api(value = "UserEndpoint", description = "This endpoint provides methods to authenticate user")
 public class UserEndpoint {
 
     @Context
@@ -36,6 +40,12 @@ public class UserEndpoint {
     @Path("/login")
     @Produces(APPLICATION_JSON)
     @Consumes(APPLICATION_JSON)
+    @ApiOperation(value = "Login")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "User successfully authenticated"),
+            @ApiResponse(code = 400, message = "Request body is invalid"),
+            @ApiResponse(code = 401, message = "User cannot be authenticated")
+    })
     public Response authenticateUser(User user) {
 
         String login = user.getLogin();

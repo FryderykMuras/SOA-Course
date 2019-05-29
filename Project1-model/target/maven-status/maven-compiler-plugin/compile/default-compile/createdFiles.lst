@@ -1,4 +1,15 @@
-com/soa/domain/NewCourse.class
+com/soa/ProtoBuffers/StudentsProto.class
+com/soa/ProtoBuffers/StudentsProto$StudentsListOrBuilder.class
+com/soa/ProtoBuffers/StudentsProto$StudentsList.class
+com/soa/ProtoBuffers/StudentsProto$StudentsList$1.class
+com/soa/ProtoBuffers/StudentsProto$Student.class
+com/soa/ProtoBuffers/StudentsProto$1.class
+com/soa/ProtoBuffers/StudentProtocMessageBodyProvider.class
 com/soa/StudentsManager.class
-com/soa/Student.class
+com/soa/ProtoBuffers/StudentsProto$Student$Builder.class
 com/soa/domain/NewStudent.class
+com/soa/ProtoBuffers/StudentsProto$StudentsList$Builder.class
+com/soa/Student.class
+com/soa/ProtoBuffers/StudentsProto$StudentOrBuilder.class
+com/soa/ProtoBuffers/StudentsProto$Student$1.class
+com/soa/domain/NewCourse.class
