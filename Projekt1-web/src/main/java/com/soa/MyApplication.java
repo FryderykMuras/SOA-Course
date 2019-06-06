@@ -20,6 +20,7 @@ public class MyApplication extends Application {
         HashSet h = new HashSet<Class<?>>();
         h.add(StudentEndpoint.class);
         h.add(UserEndpoint.class);
+        h.add(CompanyEndpoint.class);
         h.add(JWTTokenNeededFilter.class);
         h.add(SimpleKeyGenerator.class);
         h.add(io.swagger.jaxrs.listing.ApiListingResource.class);

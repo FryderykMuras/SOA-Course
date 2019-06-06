@@ -39,7 +39,7 @@
         <module>soap-connector</module>
         <module>rest-connector</module>
         <module>Project1-model</module>
-        <module>Projekt1-JPA</module>
+        <module>Projekt1-jpa</module>
         <module>Projekt1-dao</module>
     </modules>
 

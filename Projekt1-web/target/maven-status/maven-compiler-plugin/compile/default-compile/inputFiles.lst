@@ -1,5 +1,6 @@
 /Users/fryderykmuras/Projekt1/Projekt1-web/src/main/java/com/soa/KeyGenerator.java
 /Users/fryderykmuras/Projekt1/Projekt1-web/src/main/java/com/soa/JWTTokenNeeded.java
+/Users/fryderykmuras/Projekt1/Projekt1-web/src/main/java/com/soa/CompanyEndpoint.java
 /Users/fryderykmuras/Projekt1/Projekt1-web/src/main/java/com/soa/User.java
 /Users/fryderykmuras/Projekt1/Projekt1-web/src/main/java/com/soa/SimpleKeyGenerator.java
 /Users/fryderykmuras/Projekt1/Projekt1-web/src/main/java/com/soa/JWTTokenNeededFilter.java
